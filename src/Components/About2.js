@@ -11,7 +11,8 @@ import { BsHouseHeartFill } from "react-icons/bs";
 
 const About2 = () => {
   return (
-    <div className="flex flex-col justify-center items-center lg:mt-24 mt-16 p-4">
+    <div className="flex flex-col justify-center items-center lg:mt-24 mt-16 p-4"
+    id="about">
       <h1 className="centralizado primary-heading-about flex justify-center items-center text-center">
         Why choose our cleaning services?
       </h1>

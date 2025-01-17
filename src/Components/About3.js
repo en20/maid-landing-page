@@ -6,7 +6,8 @@ const About3 = () => {
     "https://static.wixstatic.com/media/ce3956_b754b9ee62664b498a26b9b34b39c0dd~mv2.jpeg/v1/fill/w_768,h_344,al_c,q_80,enc_avif,quality_auto/always-sparkling-04%20(1).jpeg";
 
   return (
-    <div className="flex flex-col justify-center items-center lg:mt-24 mt-16 p-4">
+    <div className="flex flex-col justify-center items-center lg:mt-24 mt-16 p-4"
+    id="services">
       <h1 className="centralizado primary-heading-about flex justify-center items-center text-center">
         Why choose our services?
       </h1>
@@ -52,7 +53,7 @@ const About3 = () => {
               className="w-10 h-10 mb-4"
             />
             <p className="font-bold text-5xl mb-4">{item.title}</p>
-            <p className="flex-grow text-sm">{item.description}</p>
+            <p className="flex-grow text-md">{item.description}</p>
           </div>
         ))}
       </div>

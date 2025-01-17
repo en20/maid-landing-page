@@ -6,13 +6,17 @@ import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import About2 from "./Components/About2";
+import Banner from "./Components/Banner";
+import Faq from "./Components/FAQ";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
+      <Banner/>
       <Home />
-      <About />
       <About2/>
+      <About />
+      <Faq/>
       <Work />
       <Testimonial />
       <Contact />

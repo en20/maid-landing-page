@@ -1,6 +1,6 @@
-/* Adicione isto no seu arquivo global de estilos, geralmente em styles.css ou similar */
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 * {
@@ -54,7 +54,7 @@ img {
   width: 100%;
   padding: 12px;
   font-size: 14px;
-  border: 1px solid #FE9E0D;
+  border: 1px solid pink;
   border-radius: 6px;
   outline: none;
   transition: border-color 0.3s ease;
@@ -62,7 +62,7 @@ img {
 
 .contact-form .form-group input:focus,
 .contact-form .form-group textarea:focus {
-  border-color: #FE9E0D;
+  border-color: pink;
 }
 
 .contact-form textarea {
@@ -72,8 +72,8 @@ img {
 .contact-form button {
   display: block;
   width: 100%;
-  background-color: #FE9E0D;
-  color: #fff;
+  background-color: #fff;
+  color: pink;
   font-size: 16px;
   font-weight: bold;
   border: none;
@@ -81,10 +81,11 @@ img {
   padding: 12px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: 1px solid pink;
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: pink;
 }
 
 .App {
@@ -154,9 +155,23 @@ nav {
 
 
 .home-image-section {
-  max-width: 600px;
+  max-width: 500px;
   flex: 1;
+  padding: 16px;
+  border-radius: 16px; /* Menor borda para um visual mais suave */
+  overflow: hidden; /* Garantir que a imagem não saia dos limites do container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  background-size: cover;
+  background-position: center;
 }
+
+.home-image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Manter a proporção e cortar a imagem se necessário */
+  border-radius: 12px; /* Bordas arredondadas na imagem */
+}
+
 
 .home-text-section {
   flex: 1;
@@ -180,25 +195,27 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #fff;
   outline: none;
   border: none;
   border-radius: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
-  color: white;
+  color: pink;
   transition: 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid pink;
 }
 .secondary-button svg {
   margin-left: 0.75rem;
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: pink;
+  color: black;
 }
 .about-section-container {
   margin-top: 20rem;
@@ -538,7 +555,7 @@ nav {
   flex-direction: column;
   justify-content: space-between; /* Garante que os elementos fiquem com espaçamento entre eles */
   align-items: center;      /* Centraliza os itens horizontalmente */
-  background-color: #FE9E0D; /* Cor de fundo */
+  background-color: pink; /* Cor de fundo */
   color: white;             /* Cor do texto */
   font-size: 16px;          /* Tamanho da fonte */
   width: 100%;              /* Garante que a largura ocupe toda a área disponível */

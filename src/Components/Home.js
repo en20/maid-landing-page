@@ -1,6 +1,4 @@
 import React, { useState, useRef } from "react";
-import BannerBackground from "../Assets/home-banner-background.png";
-import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
@@ -32,22 +30,15 @@ const Home = () => {
   };
 
   return (
-    <div className="home-container">
-      <Navbar />
-      <div className="home-banner-container">
-        <div className="home-bannerImage-container">
-          <img src={BannerBackground} alt="" />
-        </div>
+    <div className="home-container justify-between flex flex-col lg:mt-24 ">
+      <div className="flex flex-col lg:flex-row lg:mx-32 gap-10">
+        
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Turn your idea into an amazing website. We create a beautiful and
-            results-driven site for you, at an affordable price.
+          Transforme sua casa com nossos serviços de limpeza profissional
           </h1>
           <p className="primary-text">
-            We offer customized solutions to create modern, functional websites
-            that truly convert. Whether to boost your business or bring your
-            idea to life, we are ready to deliver results that make a
-            difference.
+          Contamos com uma equipe experiente e de confiança, pronta para deixar seu lar impecável, com atenção a cada detalhe. Limpeza de qualidade, com a praticidade que você precisa
           </p>
           <button className="secondary-button" onClick={scrollToForm}>
             Request a Budget
@@ -60,11 +51,9 @@ const Home = () => {
             onSubmit={handleSubmit}
             ref={formRef} // A referência é associada aqui
           >
-            <h2>GET A BUDGET NOW</h2>
+            <h2>GET A QUOTE NOW</h2>
             <p>
-              Fill in the fields below, and our specialists will prepare and
-              send you a FREE personalized budget tailored to your industry and
-              needs.
+            Preencha os campos abaixo e nossos especialistas irão preparar e enviar um orçamento feito sob medida para as necessidades do seu lar ou empresa.
             </p>
             <div className="form-group">
               <label htmlFor="name">Name</label>

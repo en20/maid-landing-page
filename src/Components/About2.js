@@ -10,13 +10,12 @@ import { TbWorldWww } from "react-icons/tb";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 const About2 = () => {
   return (
-    <div className="main-container">
-      <h1 className="centralizado primary-heading-about">
-        THE RIGHT RESOURCES TO BOOST YOUR BUSINESS!
+    <div className="flex flex-col justify-center items-center lg:mt-24 mt-16 p-4">
+      <h1 className="centralizado primary-heading-about flex justify-center items-center text-center">
+      Por que escolher nossos serviços?
       </h1>
-      <p className="centralizado primary-text-about">
-        We align website creation with digital marketing strategies to help your
-        business go online and achieve better results.
+      <p className="centralizado primary-text-about  flex justify-center items-center text-center">
+      Oferecemos qualidade, confiança e soluções personalizadas para atender às suas necessidades, tornando sua casa ou empresa mais limpa e agradável.
       </p>
       <div className="grid-container">
         <div className="grid-item">

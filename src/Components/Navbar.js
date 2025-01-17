@@ -40,8 +40,8 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="nav-logo-container">
-        <h1>PAGEFY IT</h1>
+      <div className=" px-8">
+        <h1 className="lg:text-5xl text-3xl">LOGO</h1>
       </div>
       <div className="navbar-links-container">
       </div>

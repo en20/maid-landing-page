@@ -13,10 +13,12 @@ const About = () => {
           <p className="primary-text">
           Dedicated professionals committed to delivering exceptional cleaning services for your home. Together, we bring you reliability, care, and quality.
           </p>
-          <button className="secondary-button">
-            Solicitar Orçamento
+          <a href="#form">
+          <button className="secondary-button" >
+            GET A QUOTE
             <FiArrowRight />
           </button>
+          </a>
         </div>
         <div className="home-image-section">
           <img src={BannerBackground} alt="Imagem de limpeza profissional" />

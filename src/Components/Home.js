@@ -18,7 +18,8 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = formData;
-    const whatsappMessage = `Olá, meu nome é ${name}. Meu email é ${email}. Gostaria de criar um site com vocês. Minha mensagem: ${message}`;
+    const whatsappMessage = `Hi, my name is ${name}. My email is ${email}. I would like to inquire about cleaning services. My message: ${message}
+`;
     const whatsappURL = `https://wa.me/+558591124238?text=${encodeURIComponent(
       whatsappMessage
     )}`;
@@ -32,30 +33,35 @@ const Home = () => {
   return (
     <div className="home-container justify-between flex flex-col lg:mt-24 ">
       <div className="flex flex-col lg:flex-row lg:mx-32 gap-10">
-        
         <div className="home-text-section">
           <h1 className="primary-heading">
-          Transforme sua casa com nossos serviços de limpeza profissional
+            Transform your home with our professional cleaning services.
           </h1>
           <p className="primary-text">
-          Contamos com uma equipe experiente e de confiança, pronta para deixar seu lar impecável, com atenção a cada detalhe. Limpeza de qualidade, com a praticidade que você precisa
+            We have an experienced and trustworthy team, ready to make your home
+            spotless, with attention to every detail. Quality cleaning with the
+            convenience you need.
           </p>
           <button className="secondary-button" onClick={scrollToForm}>
-            Request a Budget
+            GET A QUOTE
             <FiArrowRight />{" "}
           </button>
         </div>
         <div className="home-image-section">
           <form
+            id="form"
             className="contact-form"
             onSubmit={handleSubmit}
             ref={formRef} // A referência é associada aqui
           >
             <h2>GET A QUOTE NOW</h2>
             <p>
-            Preencha os campos abaixo e nossos especialistas irão preparar e enviar um orçamento feito sob medida para as necessidades do seu lar ou empresa.
+              Fill in the fields below, and our specialists will prepare and
+              send a customized quote tailored to the needs of your home or
+              business.
             </p>
-            <div className="form-group">
+            <div className="form-group"
+            >
               <label htmlFor="name">Name</label>
               <input
                 type="text"

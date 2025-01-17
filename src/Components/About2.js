@@ -6,90 +6,101 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import { MdBrowserUpdated } from "react-icons/md";
-import { TbWorldWww } from "react-icons/tb";
-import { IoPhonePortraitOutline } from "react-icons/io5";
+import { MdOutlineDryCleaning } from "react-icons/md";
+import { BsHouseHeartFill } from "react-icons/bs";
+
 const About2 = () => {
   return (
     <div className="flex flex-col justify-center items-center lg:mt-24 mt-16 p-4">
       <h1 className="centralizado primary-heading-about flex justify-center items-center text-center">
-      Por que escolher nossos serviços?
+        Why choose our cleaning services?
       </h1>
-      <p className="centralizado primary-text-about  flex justify-center items-center text-center">
-      Oferecemos qualidade, confiança e soluções personalizadas para atender às suas necessidades, tornando sua casa ou empresa mais limpa e agradável.
+      <p className="centralizado primary-text-about flex justify-center items-center text-center">
+        Our cleaning services are designed to provide exceptional quality,
+        attention to detail, and personalized care to ensure your space is
+        spotless and welcoming.
       </p>
       <div className="grid-container">
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
-          <p>SOCIAL MEDIA</p>
+          <MdOutlineDryCleaning className="icon" />
+          <p>PROFESSIONAL CLEANING SERVICES FOR YOUR COMFORT</p>
           <p>
-            The content of your website shared and visible to millions of
-            people.
+            Experience top-notch cleaning services designed for your
+            satisfaction. Our team ensures a spotless and fresh environment
+            every time. Reliable, efficient, and tailored to meet your needs.
+          </p>
+        </div>
+        <div className="grid-item">
+          <BsHouseHeartFill className="icon" />
+          <p>EFFICIENT AND RELIABLE SOLUTIONS FOR YOUR NEEDS</p>
+          <p>
+            We offer eco-friendly cleaning methods, ensuring your space is
+            spotless. Our professional team guarantees timely, consistent
+            results. Trust us to deliver exceptional service every time.
+          </p>
+        </div>
+        <div className="grid-item">
+          <SlSocialInstagram className="icon" />
+          <p>SHARING CLEANING TIPS</p>
+          <p>
+            Expert cleaning advice, DIY tips, and seasonal promotions. Stay
+            connected for helpful insights to maintain a cleaner home every day.
+            Join our community and get the latest updates and offers.
           </p>
         </div>
         <div className="grid-item">
           <CiFaceSmile className="icon" />
-          <p>CUSTOMER SUCCESS</p>
+          <p>CUSTOMER SATISFACTION GUARANTEE</p>
           <p>
-            You will be attended by experienced professionals who will provide
-            you with strategy tips to achieve your online success.
+            Your satisfaction is our priority.Our team ensures a thorough
+            cleaning of every corner of your home, paying attention to the
+            smallest details. We use high-quality products and techniques.
           </p>
         </div>
         <div className="grid-item">
           <GiMoneyStack className="icon" />
-          <p>RECEIVING PAYMENTS THROUGH THE WEBSITE</p>
+          <p>FLEXIBLE PAYMENT OPTIONS</p>
           <p>
-            You can receive payments on your website via card and boleto with
-            buttons (Pagseguro, PayPal, and Mercado Pago).
+            We offer secure and convenient payment methods, including credit
+            cards and bank transfers, making it easier for you to enjoy our
+            services.
           </p>
         </div>
         <div className="grid-item">
           <FaWhatsapp className="icon" />
-          <p>WHATSAPP AND CHAT</p>
+          <p>QUICK SUPPORT VIA WHATSAPP</p>
           <p>
-            You will provide excellent customer service and save your team's
-            time.
+            Contact us directly on WhatsApp for Immediate assistance, quick
+            responses, or to easily schedule your next cleaning service. Our
+            team is ready to accommodate your schedule.
           </p>
         </div>
         <div className="grid-item">
           <MdEmail className="icon" />
-          <p>PROFESSIONAL E-MAIL</p>
+          <p>PROFESSIONAL COMMUNICATION</p>
           <p>
-            Professionalism in your communications, sending and receiving
-            messages through an email with your brand. Example:
-            contact@yourbrand.com.br
+            Receive timely email updates on your service schedule,
+            confirmations, and reminders, all from a trusted, professional email
+            address.
           </p>
         </div>
         <div className="grid-item">
           <FcGoogle className="icon" />
-          <p>BE FOUND ON GOOGLE</p>
+          <p>FIND US EASILY ONLINE</p>
           <p>
-            Through SEO, you will reach more customers with a good ranking in
-            Google and Bing search results.
+            With strong visibility on Google, you can quickly find our trusted
+            cleaning services, read customer reviews, and book your next
+            cleaning appointment.
           </p>
         </div>
         <div className="grid-item">
           <MdBrowserUpdated className="icon" />
-          <p>SIMPLE UPDATE</p>
+          <p>EASY BOOKING AND UPDATES</p>
           <p className="text-grid">
-            With the exclusive training we will provide on our easy-to-use
-            system, you will be able to update your website yourself without
-            needing technical knowledge.
-          </p>
-        </div>
-        <div className="grid-item">
-          <TbWorldWww  className="icon" />
-          <p>CUSTOM DOMAIN</p>
-          <p>
-            You will convey more credibility to your customers with a custom
-            domain. Example: www.yourbrand.com
-          </p>
-        </div>
-        <div className="grid-item">
-          <IoPhonePortraitOutline className="icon" />
-          <p>RESPONSIVE WEBSITE</p>
-          <p>
-            A website adaptable for desktop, tablet, and mobile improves the
-            user experience, increasing interactions.
+            Book your next cleaning service easily through our user-friendly
+            website. Schedule, reschedule, or cancel services at your
+            convenience with just a few clicks. Our simple and efficient online
+            booking system ensures a hassle-free experience.
           </p>
         </div>
       </div>

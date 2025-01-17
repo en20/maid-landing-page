@@ -4,9 +4,6 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
 img {
@@ -103,12 +100,7 @@ body {
   background-color: #f6f6f6;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90px;
-}
+
 .navbar-menu-container {
   display: none;
 }
@@ -194,6 +186,7 @@ nav {
   margin: 1.5rem 0rem;
 }
 .secondary-button {
+  font-weight: 700;
   padding: 1rem 2.5rem;
   background-color: #fff;
   outline: none;
@@ -201,13 +194,12 @@ nav {
   border-radius: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
-  font-weight: 600;
   color: pink;
   transition: 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid pink;
+  border: 4px solid pink;
 }
 .secondary-button svg {
   margin-left: 0.75rem;
@@ -544,8 +536,7 @@ nav {
   grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
   gap: 20px; /* Espaçamento entre os itens do grid */
   margin-top: 20px; /* Adiciona um pequeno espaço acima do grid */
-  width: 100%;
-  max-width: 1000px; /* Limita a largura do grid */
+ 
 }
 
 /* Estilos para cada item do grid */
@@ -589,8 +580,7 @@ nav {
 
 @media (max-width: 600px) {
   .grid-container {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr); /* 3 colunas iguais */
   }
 }
 .primary-heading-about {

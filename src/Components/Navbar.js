@@ -1,73 +1,52 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-  const menuOptions = [
-    {
-      text: "Home",
-      icon: <HomeIcon />,
-    },
-    {
-      text: "About",
-      icon: <InfoIcon />,
-    },
-    {
-      text: "Testimonials",
-      icon: <CommentRoundedIcon />,
-    },
-    {
-      text: "Contact",
-      icon: <PhoneRoundedIcon />,
-    },
-    {
-      text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
-    },
-  ];
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <nav>
-      <div className=" px-8">
-        <h1 className="lg:text-5xl text-3xl">LOGO</h1>
-      </div>
-      <div className="navbar-links-container">
-      </div>
-      <div className="navbar-menu-container">
-        
-      </div>
-      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
-        <Box
-          sx={{ width: 250 }}
-          role="presentation"
-          onClick={() => setOpenMenu(false)}
-          onKeyDown={() => setOpenMenu(false)}
+    <nav className="bg-white p-4 h-[100px] flex items-center">
+      <div className="flex justify-between items-center w-full mx-auto px-4">
+        {/* Logo */}
+        <div className="text-black text-5xl font-bold">LOGO</div>
+
+        {/* Links para desktop */}
+        <div className="hidden md:flex space-x-10">
+          <a href="/teste" className="text-black text-xl hover:text-gray-400">Home</a>
+          <a href="/teste" className="text-black text-xl hover:text-gray-400">About</a>
+          <a href="/teste" className="text-black text-xl hover:text-gray-400">Services</a>
+          <a href="/teste" className="text-black text-xl hover:text-gray-400">Contact</a>
+        </div>
+
+        {/* Botão do menu para mobile */}
+        <button
+          className="text-black md:hidden"
+          onClick={toggleMobileMenu}
         >
-          <List>
-            {menuOptions.map((item) => (
-              <ListItem key={item.text} disablePadding>
-                <ListItemButton>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-        </Box>
-      </Drawer>
+          {isMobileMenuOpen ? "Close" : "Menu"}
+        </button>
+      </div>
+
+      {/* Drawer para mobile */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 bg-white bg-opacity-75 z-50 flex items-center justify-center">
+          <div className="bg-white w-full h-full p-8 space-y-6 text-center">
+            <a href="/teste" className="text-black text-2xl hover:text-gray-400 block">Home</a>
+            <a href="/teste" className="text-black text-2xl hover:text-gray-400 block">About</a>
+            <a href="/teste" className="text-black text-2xl hover:text-gray-400 block">Services</a>
+            <a href="/teste" className="text-black text-2xl hover:text-gray-400 block">Contact</a>
+            <button
+              className="absolute top-4 right-4 text-black text-3xl"
+              onClick={toggleMobileMenu}
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

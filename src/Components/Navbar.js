@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
+import { LuMenu } from "react-icons/lu";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
 
         {/* Botão do menu para mobile */}
         <button className="text-black md:hidden" onClick={toggleMobileMenu}>
-          {isMobileMenuOpen ? "Close" : "Menu"}
+          {isMobileMenuOpen ? "Close" : <LuMenu/>}
         </button>
       </div>
 

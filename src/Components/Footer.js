@@ -3,13 +3,17 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import BannerBackground from "../Assets/card.png";
 
 const Footer = () => {
   return (
     <footer className="bg-pink-500 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">LOGO</h1>
+          {/* Logo */}
+          <div className="flex items-center">
+            <img src={BannerBackground} alt="Logo" className=" w-auto" />
+          </div>
           <div className="flex space-x-6 text-xl">
             <BsTwitter />
             <SiLinkedin />
@@ -17,7 +21,7 @@ const Footer = () => {
             <FaFacebookF />
           </div>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
@@ -45,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="text-center">
           <p className="text-sm">&copy; 2025 MKVIP. All rights reserved.</p>
         </div>
